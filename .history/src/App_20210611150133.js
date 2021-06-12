@@ -28,9 +28,7 @@ function App() {
   const [expenses, setExpenses] = useState(seedData);
   const addExpenseHandler = (expense) => {
     console.log(expense, "in App.js");
-    setExpenses((prevExpenses) => {
-      return [expense, ...prevExpenses];
-    });
+    setExpenses(expense, "in App.js");
   };
 
   return (

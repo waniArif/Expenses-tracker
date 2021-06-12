@@ -22,11 +22,7 @@ const Expenses = (props) => {
           const { id, title, amount, date } = item;
           return (
             <li key={id}>
-              <ExpenseItem
-                /* {...item} */ title={title}
-                amount={amount}
-                date={date}
-              />
+              <ExpenseItem title={title} amount={amount} date={date} />
             </li>
           );
         })}
