@@ -5,6 +5,7 @@ import "./ExpenseFilter.css";
 const ExpenseFilter = (props) => {
   const handleChange = (e) => {
     props.onYearChange(e.target.value);
+    // const copyItems = [...props.items];
   };
   return (
     <div className="expenses-filter">

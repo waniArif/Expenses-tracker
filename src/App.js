@@ -24,10 +24,10 @@ const seedData = [
   },
 ];
 
-function App() {
+const App = () => {
   const [expenses, setExpenses] = useState(seedData);
   const addExpenseHandler = (expense) => {
-    console.log(expense, "in App.js");
+    // console.log(expense, "in App.js");
     setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];
     });
@@ -39,6 +39,6 @@ function App() {
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
